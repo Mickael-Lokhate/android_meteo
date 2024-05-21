@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:flow_verticalGap="24dp"
+    android:gravity="center"
+    android:paddingTop="50dp"
+    tools:context=".ui.fragments.ForecastDetails">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:text="@string/monaco_monaco"
+        android:textColor="@color/black"
+        android:id="@+id/locationText"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/dateText"
+        android:textSize="32sp"
+        android:text="@string/wednesday_may_22_2024"
+        android:fontFamily="sans-serif"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/weatherImage"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:contentDescription="@string/weather_image"
+            />
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="Partly cloudy"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:id="@+id/weatherText"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="@string/precipitation_0_0mm_77"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:id="@+id/precipitation" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/min_19_c_max_20_2_c"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:id="@+id/temp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_hourly_forecast"
+            android:id="@+id/hourlyButton"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+</LinearLayout>
